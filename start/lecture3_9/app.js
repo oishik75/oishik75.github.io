@@ -63,7 +63,7 @@ class App{
         const btn = new ARButton( this.renderer );
 
         controller = this.renderer.xr.getController( 0 );
-        controller.addEventListener( 'selectstart', onSelect );
+        controller.addEventListener( 'select', onSelect );
         this.scene.add( controller );
 
         this.renderer.setAnimationLoop( this.render.bind(this) );
